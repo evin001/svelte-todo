@@ -28,16 +28,16 @@
             .catch(e => error = e.message)
     }
 
-    function handleClickField(userId, field) {
-        if (field === 'user') {
+    function handleSelect(event) {
+        if (event.detail.link === 'user') {
             backPage.set(current)
-            user.set(users.find(user => user.id === userId))
+            user.set(users.find(user => user.id === event.detail.id))
         }
     }
 </script>
 
 {#if users.length}
-    <Users {users} {fields} onClick={handleClickField} />
+    <Users {users} {fields} on:select={handleSelect} />
     <Pagination {current} {total} />
 {:else if error}
     <p class="error">{error}</p>
