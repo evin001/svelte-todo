@@ -1,0 +1,31 @@
+{
+  "name": "svelte-togo",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.2",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.4",
+    "svelte": "^3.20.1",
+    "svelte-loader": "^2.13.6",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "svelte-routing": "^1.4.2"
+  }
+}
