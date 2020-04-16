@@ -22,7 +22,7 @@
 {/if}
 
 {#await fetchTodos}
-    ...загрузка
+    <div>...загрузка</div>
 {:then todos}
   {#each todos as todo}
       <Todo {...todo} />
